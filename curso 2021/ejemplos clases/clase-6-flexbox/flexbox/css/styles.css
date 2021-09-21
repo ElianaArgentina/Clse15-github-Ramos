@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.red__box,
+.black__box {
+    border: 2px solid rgb(65, 65, 65);
+    width: 100px;
+    height: 100px;
+}
+
+.red__box {
+    background-color: rgb(193, 0, 0);
+}
+
+.black__box {
+    background-color: rgb(12, 12, 12);
+}
+
+.pieDePagina {
+    background-color: rgb(196, 196, 196);
+    margin-top: 5rem;
+}
+
+.cajas {
+    display: flex;
+}
+
+/* FLEXBOX */
+
+header {
+    height: 200px;
+    padding: 1rem 0;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header div,
+article div {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(203, 203, 203);
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__principal {
+    display: flex;
+    height: 300px;
+}
+
+aside {
+    background-color: yellow;
+    width: 30%;
+}
+
+article {
+    background-color: rgb(254, 44, 44);
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    background-color: lightseagreen;
+    height: 100px;
+}
+
+.dos {
+    order: -1;
+}
+
+
+
+/* Menu de navegación */
+
+#inicio {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inicio section {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#inicio nav {
+    width: 70%;
+}
+
+/* CARDS */
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.productos article {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 280px;
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 1rem;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6685</title>
+</head>
+<body>
+    <header id="inicio">
+        <h1>Mi sitio web</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="paginas/listas.html">Listas</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://google.com.ar">Google</a>
+                </li>
+                <li>
+                    <a href="">Nosotros</a>
+                </li>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Clase 2 - Camada 16685</h2>
+        <h3>Listas ordenadas</h3> <!--ol-->
+        <ol>
+            <li>Colores
+                <ol>
+                    <li>Rojo</li>
+                    <li>Azul</li>
+                    <li>Verde</li>
+                </ol>
+            </li>
+
+            <li>Talles
+                <ul>
+                    <li>XS</li>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Listas sin orden</h3> <!--ul-->
+
+        <ul>
+            <li>Buenos Aires</li>
+            <li>Chubut</li>
+            <li>Tucumán</li>
+        </ul>
+
+        <h3>Tablas</h3>
+
+        <table border="1" cellpadding="8" cellspacing="2">  
+            <tr>
+              <th>A</th>   
+              <th>B</th>   
+              <th>C</th>
+              <th>D</th>  
+            </tr>
+            <tr>  
+              <th>1</th>   
+              <td>2</td>   
+              <td>3</td>
+              <td>4</td>  
+            </tr>
+            <tr>
+                <th>uno</th>
+                <td>dos</td>
+                <td>tres</td>
+                <td>cuatro</td>
+            </tr>
+          </table>
+
+        <h3>Formularios</h3>
+        <form>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input required name="nombre" id="nombre" type="text" placeholder="Ej. Juan Pérez">
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input required type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido">
+            </div>
+            <div>
+                <label for="edad">Edad:</label>
+                <input required type="number" id="edad">
+            </div>
+            <label for="consulta">Dejanos tu consulta:</label>
+            <textarea name="consulta" id="consulta" cols="15" rows="1" maxlength="140"></textarea>
+
+            <div>
+                <label for="colores">Rojo</label>
+                <input type="radio" name="colores" value="rojo" />
+                <label for="colores">Verde</label>
+                <input type="radio" name="colores" value="verde" />
+                <label for="colores">Amarillo</label>
+                <input type="radio" name="colores" value="amarillo" />
+                <label for="colores">Celeste</label>
+                <input type="radio" name="colores" value="celeste" />
+            </div>
+            <fieldset>
+                <legend>Acepta términos y condiciones</legend>
+                <input type="checkbox" name="acepta" value="1" />
+            </fieldset>
+            <fieldset>
+                <label for="talles">Seleccione su talle:</label>
+                <select name="talles">
+                    <option value="s">SMALL</option>
+                    <option value="m">MEDIUM</option>
+                    <option value="l">LARGE</option>
+                </select>
+            </fieldset>
+
+            
+            <div>
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Enviar">
+            </div>
+            
+            
+           
+        </form>
+        
+    </section>
+
+
+    <footer>
+        <p>Sitio desarrollado por ...</p>
+        <a href="#inicio">Ir arriba</a>
+    </footer>
+</body>
+</html>

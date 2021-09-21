@@ -1,0 +1,44 @@
+h1 {
+    color: $azul-medio;
+    font-family: Montserrat;
+    font-size: 4rem;
+    position: relative;
+    padding: 0.7rem;
+    padding-top: 3rem;
+    text-align: center;
+    @media (max-width: 1024px) {
+        font-size: 4rem;
+    }
+    @media (max-width: 600px) {
+        font-size: 2.7rem;
+    }
+}
+
+h2 {
+    color: 000000;
+    font-size: 2.5rem;
+    position: relative;
+    text-align: center;
+    margin-bottom: 5rem;
+    @media (max-width: 1024px) {
+        font-size: 2rem;
+    }
+    @media (max-width: 600px) {
+        font-size: 1.8rem;
+    }
+}
+
+h3 {
+    color: #000000;
+    font-size: 1.8rem;
+    @media (max-width: 1024px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 600px) {
+        font-size: 1.4rem;
+    }
+}
+
+h4 {
+    font-size: 1.5rem;
+}

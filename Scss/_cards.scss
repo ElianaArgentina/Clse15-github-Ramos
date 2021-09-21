@@ -1,0 +1,136 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+
+    @media (max-width: 768px) {
+        .marginTop-quince {
+            margin-top: 1.5rem;
+        }
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 270px;
+        min-width: 120px;
+        min-height: 270px;
+        border-radius: 25px;
+        background-color: transparent;
+        padding: 1rem;
+        box-shadow: 2px 2px 5px #dde0e2;
+        transition: width 20s, height 20s, transform 20s;
+
+        &:hover {
+            border-color: #fff;
+            box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+
+            img {
+                width: 6rem;
+                height: 6rem;
+                background-color: $colorbase-iconos;
+                border-radius: 100%;
+                padding: 10px;
+                filter: drop-shadow(4px 4px 4px rgb(168, 168, 168));
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+
+            p {
+                font-size: 1.3rem;
+                margin-top: 1rem;
+                text-align: left;
+
+                @media (max-width: 600px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    &.cardsProductos {
+        article {
+            justify-content: space-evenly;
+            border: 3px solid rgba(202, 216, 243, 0.87);
+            border-radius: 10px;
+            padding: 0.3rem 0.5rem 1rem 0.5rem;
+            box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.15);
+            margin-top: 2rem;
+
+            a {
+                color: white;
+                margin-top: 0;
+
+                &:hover {
+                    transform: scale(1.1);
+
+                    img {
+                        transform: scale(1);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: 0.7rem;
+                    padding: 0;
+                    filter: none;
+                    height: inherit;
+                    background-color: inherit;
+                }
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            .botonesFlex {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+
+                .btn-lg {
+                    font-size: 15px;
+                    width: 45%
+                }
+            }
+
+            .cardParrafo {
+                margin: 3% 3%;
+            }
+        }
+    }
+
+    &.cardsPlanes {
+        article {
+            box-shadow: 0px 0px 0px;
+
+            a {
+                &:hover {
+                    img {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+
+    &.cardsNosotros {
+        transform: scale(1);
+    }
+}

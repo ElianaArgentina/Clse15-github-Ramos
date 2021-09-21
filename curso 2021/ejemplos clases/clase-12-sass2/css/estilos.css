@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+/* OPERACIONES */
+.box_uno {
+  background-color: #4285F4;
+  width: 300px;
+  /* Ancho de 400 */
+  height: 30px;
+}
+
+.box_dos {
+  background-color: #33D374;
+  width: 200px;
+  /* Ancho de 300 */
+  height: 30px;
+}
+
+/* CONDICIONALES */
+/* Mi variable */
+p {
+  color: red;
+}
+
+.caja {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+
+/* BUCLES */
+.cajas-1 {
+  width: 3em;
+  background-color: black;
+  border: solid 1px red;
+  color: white;
+}
+
+.cajas-2 {
+  width: 6em;
+  background-color: black;
+  border: solid 1px red;
+  color: white;
+}
+
+.cajas-3 {
+  width: 9em;
+  background-color: black;
+  border: solid 1px red;
+  color: white;
+}
+
+/* EACH */
+.instagram-icono {
+  background-image: url("/imagenes/instagram.png");
+  width: 16px;
+  height: 16px;
+}
+
+.facebook-icono {
+  background-image: url("/imagenes/facebook.png");
+  width: 16px;
+  height: 16px;
+}
+
+.twitter-icono {
+  background-image: url("/imagenes/twitter.png");
+  width: 16px;
+  height: 16px;
+}
+
+.linkedin-icono {
+  background-image: url("/imagenes/linkedin.png");
+  width: 16px;
+  height: 16px;
+}
+
+.whatsapp-icono {
+  background-image: url("/imagenes/whatsapp.png");
+  width: 16px;
+  height: 16px;
+}
+
+/* MAPS */
+/*Creamos el bucle para usar los valores del mapa*/
+.boton--twitter {
+  background-color: #55acee;
+}
+
+.boton--facebook {
+  background-color: #3a5795;
+}
+
+.boton--send-mail {
+  background-color: #C25E30;
+}
+
+/* SOCIALES */
+.sociales--linkedin {
+  background-color: green;
+}
+
+.sociales--whatsapp {
+  background-color: yellow;
+}
+
+.sociales--tres {
+  background-color: blue;
+}
+
+/* EXTEND */
+.redsocial, .redsocial--nueva {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+.redsocial--nueva {
+  border-width: 3px;
+}
+
+.card, .card-dos {
+  text-align: center;
+  border: solid 1px black;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.card-dos {
+  background-color: #e7ffb7;
+  width: 300px;
+}
+
+/* MIXINS */
+.box {
+  height: 50px;
+  width: 500px;
+  color: white;
+  background-color: #cfcfcf;
+  border: 1px solid red;
+}
+
+.box-dos {
+  height: 100px;
+  width: 300px;
+  color: green;
+  background-color: blue;
+  border: solid 1px green;
+}
+
+.box-tres {
+  height: 100px;
+  width: 100px;
+  color: none;
+  border: solid 1px black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Urbanist", sans-serif;
+}
+
+.content__title {
+  background-color: #00ffff;
+}
+
+h1 {
+  color: #002c66;
+  text-align: center;
+}
+
+header {
+  background-color: #002c66;
+  padding: .3rem 0;
+}
+
+header nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #00ffff;
+}
+
+.productos {
+  background-color: #00ffff;
+  padding: 2rem .5rem;
+}
+
+.productos h2 {
+  color: #002c66;
+  text-align: center;
+  margin-bottom: .4rem;
+}
+
+.productos p {
+  color: black;
+  text-align: center;
+}
+
+.servicios {
+  padding: 1rem 2rem;
+}
+
+.servicios article p {
+  color: red;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+}
+
+.servicios article p:first-child {
+  color: blue;
+  padding: 1rem 2rem 3rem 1rem;
+}
+
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.blue__box,
+.black__box {
+    border: 2px solid rgb(65, 65, 65);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    font-size: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue__box {
+    background-color: rgb(0, 38, 255);
+}
+
+.black__box {
+    background-color: rgb(12, 12, 12);
+}
+
+.pieDePagina {
+    background-color: rgb(196, 196, 196);
+    margin-top: 5rem;
+    font-size: 1.6rem;
+}
+
+
+/* FLEXBOX */
+
+header {
+    padding: 1rem 0;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+/* Menu de navegación */
+
+#inicio {
+    background-color: rgb(137, 155, 252);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inicio section {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#inicio nav {
+    width: 30%;
+}
+
+.navegacion li a {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+/* GRIDS */
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: solid 4px black;
+    margin: 1rem;
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    margin-left: 8rem;
+    transition: all 2s;
+
+}
+
+.box:hover {   
+    transform: skew(25deg);
+}
+
+form input {
+    transition: all 5s;
+}
+
+form input:hover {
+    background-color: red;
+}
+
+@keyframes efecto {
+    0%{ width: 100px; }
+    25%{ width: 300px; }
+    50%{ width: 200px;
+         background-color: rgb(255, 255, 255); }
+    75%{ width: 300px;}
+    100%{ width: 100px;
+          background-color:rgb(0, 0, 0);}
+ }
+
+ section.animation {
+    margin: 1rem;
+    width: 100px;
+    height: 100px;
+    background-color: green;    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s;
+ }
+
+ 

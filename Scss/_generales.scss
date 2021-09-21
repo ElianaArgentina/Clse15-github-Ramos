@@ -1,0 +1,260 @@
+html {
+    font-size: 62.5%;
+    /* por defecto se use 10px, usamos 1 rem = 10 px, medida relativa a la conf. del tamaño raiz*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 1.4rem;
+}
+
+header {
+    position: sticky;
+    /*menu de navegacion fijo*/
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    /*si quiero que no se vea sobre alguna section, le pongo un z menor*/
+    background-color: $colorbasenavbar;
+    backdrop-filter: blur(0.5px);
+
+    .navbar {
+        padding-bottom: 0;
+        padding-top: 0;
+
+        .navbar-brand {
+            padding-bottom: 0;
+            padding-top: 0;
+
+            img {
+                height: 6rem;
+                width: 17rem;
+                padding: 0.3rem;
+                filter: drop-shadow(1px 1px 2px rgb(168, 168, 168));
+            }
+        }
+
+        .navbar-collapse {
+            flex-grow: 0;
+
+            @media (max-width: 1024px) {
+                .barraBaja {
+                    height: 100%;
+                }
+            }
+
+            .barraBajaUl {
+                height: 100%;
+
+                @media (max-width:1024px) {
+                    margin-left: -2rem;
+                }
+
+                @media (max-width: 600px) {
+                    a {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                .nav-item {
+                    border-bottom: 3px solid transparent;
+
+                    .nav-link {
+                        margin-left: 1.5rem;
+                    }
+
+                    .nav-link:hover {
+                        color: $azul-medio !important;
+                    }
+                }
+
+                .active {
+                    border-bottom: 3px solid $azul-medio !important;
+                    height: 60px;
+
+                    .nav-link {
+                        color: $azul-medio !important;
+                    }
+
+                    @media (max-width:768px) {
+                        border: 0 !important;
+                        border-left: 3px solid $azul-medio !important;
+                        height: inherit;
+                    }
+                }
+
+                li {
+                    margin-left: 2.5rem;
+
+                    &.bandera {
+                        filter: drop-shadow(0.5px 0.5px 2px rgb(168, 168, 168));
+
+                        @media (max-width:768px) {
+                            padding-left: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.botonWhatsApp {
+    img {
+        width: 70px;
+        position: fixed;
+        bottom: 180px;
+        right: 20px;
+        filter: drop-shadow(2px 2px 3px rgb(116, 115, 115));
+        transition: width 2s, height 2s, transform 2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 1024px) {
+            width: 55px;
+            position: fixed;
+            filter: drop-shadow(3px 3px 3px rgb(116, 115, 115));
+        }
+    }
+}
+
+.piedepagina {
+    background-image: linear-gradient(to right, #020024, #050447, #050449, #040238, #080768, #07065c, #090979);
+    width: 100%;
+    color: white;
+
+    &__grilla {
+        display: grid;
+        grid-template-areas:
+            "esarriba    estelefono   esinsta"
+            ".           esmail       esface";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 10px;
+
+        @media (max-width: 500px) {
+            padding: 5px 0 0 0;
+            display: flex;
+            flex-direction: column;
+
+            article {
+                font-size: 0.9rem;
+                align-items: baseline;
+            }
+        }
+
+        &--centrado {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        &--arriba {
+            grid-area: esarriba;
+
+            &:hover {
+
+                a,
+                .fa-chevron-circle-up {
+                    background-image: linear-gradient(to left, #42a508, #03520a);
+                    border-radius: 1rem;
+                }
+            }
+        }
+
+        &--telefono {
+            grid-area: estelefono;
+        }
+
+        &--mail {
+            grid-area: esmail;
+        }
+
+        &--insta {
+            grid-area: esinsta;
+
+            &:hover {
+
+                a,
+                .fa-instagram {
+                    background-image: linear-gradient(to left, #f9ed32, #ee2a7b, #002aff);
+                    border-radius: 1rem;
+                }
+            }
+        }
+
+        &--face {
+            grid-area: esface;
+
+            &:hover {
+
+                a,
+                .fa-facebook-square {
+                    background-image: linear-gradient(to left, #3b5998, #3b5998);
+                    border-radius: 1rem;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+
+            @media (max-width: 600px) {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+        background-image: linear-gradient(to right, #020024, #050447, #050449, #040238, #080768, #07065c, #090979);
+        filter: saturate(40%);
+
+        a {
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 500px) {
+            padding: 10px 5px 10px 5px;
+        }
+
+        @media (max-width: 600px) {
+
+            p,
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        .fa-chevron-circle-up {
+
+            font-size: 2rem;
+        }
+
+        .fa-facebook-square {
+
+            font-size: 2.5rem;
+        }
+
+        .fa-instagram {
+
+            font-size: 2.8rem;
+        }
+    }
+}

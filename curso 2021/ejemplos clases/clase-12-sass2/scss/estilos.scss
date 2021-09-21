@@ -1,0 +1,76 @@
+@import "variables";
+@import "fuentes";
+@import "index";
+@import "productos";
+@import "sass-II";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Urbanist", sans-serif;
+}
+
+.content__title {
+  background-color: #00ffff;
+}
+
+h1 {
+  color: #002c66;
+  text-align: center;
+}
+
+header {
+  background-color: #002c66;
+  padding: .3rem 0;
+    nav {
+        width: 80%;
+        margin: 0 auto;
+        ul {
+            display: flex;
+            justify-content: space-around;
+                li {
+                    list-style-type: none;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    a {
+                        text-decoration: none;
+                        color: #00ffff;
+                }
+            }
+        }
+    }
+}
+
+.productos {
+  background-color: #00ffff;
+  padding: 2rem .5rem;
+    h2 {
+        color: #002c66;
+        text-align: center;
+        margin-bottom: .4rem;
+  }
+    p {
+        color: black;
+        text-align: center;
+  }
+}
+
+.servicios {
+  padding: 1rem 2rem;
+    article p {
+        color: red;
+        font-family: $titillium;
+        font-weight: $titillium-regular;
+    }
+    article p:first-child {
+        color: blue;
+        padding: $padding-parrafos;
+    }
+}
+
+@import "mediaqueries";
