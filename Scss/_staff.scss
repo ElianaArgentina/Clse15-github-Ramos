@@ -4,4 +4,11 @@
     justify-content:space-evenly;
     align-items:flex-start;
     font-size: 1.7rem;
+    @media (max-width: 500px) {
+        padding: 1rem;
+        p {
+            padding-right: 3.5rem;
+            text-align: center;
+        }
+    }
 }

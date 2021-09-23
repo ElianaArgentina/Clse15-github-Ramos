@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 h1 {
-  color: #266FE6;
+  color: #266fe6;
   font-family: Montserrat;
   font-size: 4rem;
   position: relative;
@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  color: 000000;
+  color: #000000;
   font-size: 2.5rem;
   position: relative;
   text-align: center;
@@ -146,22 +146,22 @@ header .navbar .navbar-collapse .barraBajaUl .nav-item .nav-link {
 }
 
 header .navbar .navbar-collapse .barraBajaUl .nav-item .nav-link:hover {
-  color: #266FE6 !important;
+  color: #266fe6 !important;
 }
 
 header .navbar .navbar-collapse .barraBajaUl .active {
-  border-bottom: 3px solid #266FE6 !important;
+  border-bottom: 3px solid #266fe6 !important;
   height: 60px;
 }
 
 header .navbar .navbar-collapse .barraBajaUl .active .nav-link {
-  color: #266FE6 !important;
+  color: #266fe6 !important;
 }
 
 @media (max-width: 768px) {
   header .navbar .navbar-collapse .barraBajaUl .active {
     border: 0 !important;
-    border-left: 3px solid #266FE6 !important;
+    border-left: 3px solid #266fe6 !important;
     height: inherit;
   }
 }
@@ -383,7 +383,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
 }
 
 .pantallaCompleta .carousel .carousel-indicators .active {
-  background-color: #266FE6;
+  background-color: #266fe6;
 }
 
 .pantallaCompleta .carousel .carousel-indicators button {
@@ -659,6 +659,14 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   z-index: -1;
 }
 
+.imagenBase h1 {
+  color: #fafafa;
+}
+
+.imagenBase p {
+  color: #b7d0f8 !important;
+}
+
 .formatoParrafos {
   margin-bottom: 7rem;
   margin-top: 3rem;
@@ -674,7 +682,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
 .formatoParrafos .productoPrecio {
   text-align: center;
   font-size: 2rem;
-  color: #266FE6;
+  color: #266fe6;
   margin-bottom: 3rem;
 }
 
@@ -710,8 +718,42 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   font-size: 1.7rem;
 }
 
+@media (max-width: 500px) {
+  .staff {
+    padding: 1rem;
+  }
+  .staff p {
+    padding-right: 3.5rem;
+    text-align: center;
+  }
+}
+
+.contacto {
+  background-image: url("../multimedia/imagenes/ameba (1).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 90vh;
+}
+
+.contacto::before {
+  content: "";
+  background-color: rgba(22, 24, 24, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.contacto h1 {
+  color: #fafafa;
+}
+
 .contacto h2 {
   margin-bottom: 0rem;
+  color: #b7d0f8;
 }
 
 .contacto .needs-validation {
@@ -729,15 +771,42 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: 0.3rem;
+  z-index: 0;
 }
 
 .contacto .needs-validation .btn {
   font-size: 2rem;
   margin-top: 3rem;
+  -webkit-box-shadow: 2px 2px 10px rgba(91, 95, 102, 0.897);
+          box-shadow: 2px 2px 10px rgba(91, 95, 102, 0.897);
 }
 
 .contacto .needs-validation .col-md-4, .contacto .needs-validation .col-md-6 {
   width: 70%;
+  color: #78a0df;
+}
+
+.contacto .needs-validation .col-md-4 .invalid-feedback, .contacto .needs-validation .col-md-6 .invalid-feedback {
+  font-size: 1.5rem;
+  color: #f5dcdc;
+  background-color: rgba(255, 105, 97, 0.7);
+  padding: 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+  margin-top: -1rem;
+  z-index: 0;
+}
+
+.contacto .needs-validation .col-md-4 textarea:focus, .contacto .needs-validation .col-md-4 input:focus, .contacto .needs-validation .col-md-4 input[type]:focus, .contacto .needs-validation .col-md-6 textarea:focus, .contacto .needs-validation .col-md-6 input:focus, .contacto .needs-validation .col-md-6 input[type]:focus {
+  border-color: #266fe6;
+  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(123, 16, 223, 0.075) inset, 0 0 0.8rem rgba(0, 68, 255, 0.6);
+          box-shadow: 0 0.5rem 0.5rem rgba(123, 16, 223, 0.075) inset, 0 0 0.8rem rgba(0, 68, 255, 0.6);
+  outline: 0 none;
+}
+
+@media (max-width: 600px) {
+  .contacto .needs-validation .col-md-4, .contacto .needs-validation .col-md-6 {
+    width: 100%;
+  }
 }
 
 .contacto .needs-validation .form-label {
@@ -747,16 +816,33 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
 .contacto .needs-validation .form-control {
   padding: 1.5rem;
   font-size: 1.4rem;
+  border-radius: 1rem !important;
 }
 
 .contacto .needs-validation .col-md-3 {
   padding: 2rem 5rem 5rem 5rem;
-  background-color: #92b1e2;
+  background-color: rgba(204, 218, 241, 0.2);
   width: 50%;
+  border-radius: 1rem !important;
 }
 
 .contacto .needs-validation .col-md-3 .form-label {
   margin-bottom: 3rem;
+  color: white;
+}
+
+.contacto .needs-validation .col-md-3 .form-select {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  .contacto .needs-validation .col-md-3 {
+    width: 100%;
+  }
+}
+
+.contacto .was-validated .form-control:invalid {
+  border: 0.3rem solid red !important;
 }
 
 .sinMargin {
@@ -775,6 +861,10 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   padding: 1.5rem;
 }
 
+.paddingleftTreinta {
+  padding-left: 3rem;
+}
+
 .marginBottom-quince {
   margin-bottom: 1.5rem;
 }
@@ -789,58 +879,5 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
 
 .marginRight-quince {
   margin-right: 1.5rem;
-}
-
-/*-------------- Desafio SASS 2 */
-.box_uno {
-  background-color: #92b8f7;
-  width: 1200px;
-  height: 60px;
-  text-align: center;
-  color: #261077;
-}
-
-.box_dos {
-  background-color: #aa9ceb;
-  width: 1205px;
-  height: 60px;
-}
-
-/*---------------Desafio complementario SASS 2*/
-/*-- Bucle--*/
-.box_1 {
-  width: 60rem;
-  background-color: black;
-  border: solid 1px red;
-  color: white;
-}
-
-.box_2 {
-  width: 120rem;
-  background-color: black;
-  border: solid 1px red;
-  color: white;
-}
-
-/* Each */
-.fish1-icono {
-  background-image: url("../multimedia/fish1.svg");
-  width: 160px;
-  height: 170px;
-}
-
-.fish2-icono {
-  background-image: url("../multimedia/fish2.svg");
-  width: 160px;
-  height: 170px;
-}
-
-/* Maps */
-.boton--fish1 {
-  background-color: #55acee;
-}
-
-.boton--fish2 {
-  background-color: #3a5795;
 }
 /*# sourceMappingURL=style.css.map */

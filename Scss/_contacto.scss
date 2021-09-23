@@ -1,6 +1,25 @@
 .contacto{
+    background-image: url("../multimedia/imagenes/ameba (1).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 90vh;
+    &::before {
+        content: "";
+        background-color: rgba(22, 24, 24, 0.7); 
+        position: absolute; 
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    h1 {
+        color: $colortitulofondo;
+    }
     h2 {
         margin-bottom: 0rem;
+        color:$colorSubtitulofondo;
     }
     .needs-validation {
         display: flex;
@@ -8,12 +27,32 @@
         align-items:center;
         flex-direction: column;
         padding-right: 0.3rem;
+        z-index: 0;
         .btn {
             font-size: 2rem;
             margin-top: 3rem;
+            box-shadow: 2px 2px 10px rgba(91, 95, 102, 0.897);
         }
         .col-md-4 , .col-md-6 {
             width: 70%;
+            color:$azul-claro;
+            .invalid-feedback {
+                font-size: 1.5rem;
+                color:rgb(245, 220, 220);
+                background-color: rgba(255, 105, 97, 0.7);
+                padding: 1.5rem;
+                border-radius: 0 0 1rem 1rem;
+                margin-top: -1rem;
+                z-index: 0;
+            }
+            textarea:focus, input:focus, input[type]:focus {
+                border-color: $azul-medio;
+                box-shadow: 0 0.5rem 0.5rem rgba(123, 16, 223, 0.075)inset, 0 0 0.8rem rgba(0, 68, 255, 0.6);
+                outline: 0 none;
+            }
+            @media (max-width: 600px) {
+                    width: 100%;
+            }
         }
         .form-label {
             font-size: 1.7rem;
@@ -21,14 +60,28 @@
         .form-control {
             padding: 1.5rem;
             font-size: 1.4rem;
+            border-radius: 1rem !important;
         }
         .col-md-3 {
             padding: 2rem 5rem 5rem 5rem;
-            background-color:#92b1e2;
+            background-color:rgba(204, 218, 241, 0.2);
             width: 50%;
+            border-radius: 1rem !important;
             .form-label {
                 margin-bottom: 3rem;
+                color:white;
+            }
+            .form-select {
+                font-size: 1.3rem;
+            }
+            @media (max-width: 600px) {
+                width: 100%;
             }
         }
+    }
+    .was-validated {
+            .form-control:invalid {
+                border: 0.3rem solid red !important;
+            }
     }
 }
