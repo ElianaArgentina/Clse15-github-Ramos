@@ -1,14 +1,14 @@
 .formatoParrafos {
-    margin-bottom: 7rem;
-    margin-top: 3rem;
-    margin: 0% 10%;             
+    margin: 0% 10%; 
+    margin-bottom: 7rem; 
+    margin-top: 4rem;           
     @media (max-width: 600px) {
         margin: 2rem;
     }
     .productoPrecio {
         text-align: center;
         font-size: 2rem;
-        color: $azul-medio;
+        color: black;
         margin-bottom: 3rem;
         @media (max-width: 1024px) {
             font-size: 1.7rem;

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,SADK,CACL,CAAC,CAAC;EACE,SAAS,EAAE,KAAK;CACnB",
+    "sources": [
+        "../Scss/error404.scss"
+    ],
+    "names": [],
+    "file": "error404.css"
+}
