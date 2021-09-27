@@ -6,6 +6,12 @@
     margin-top: 3rem;
     margin-bottom: 7rem;
 
+    @media (max-width: 810px) {
+        .marginTop-quince {
+            margin-top: 1.5rem;
+        }
+    }
+
     @media (max-width: 768px) {
         .marginTop-quince {
             margin-top: 1.5rem;
@@ -22,12 +28,18 @@
         border-radius: 25px;
         background-color: transparent;
         padding: 1rem;
-        box-shadow: 2px 2px 5px #dde0e2;
+        box-shadow: 2px 2px 15px #dde0e2;
         transition: width 20s, height 20s, transform 20s;
 
         &:hover {
-            border-color: #fff;
-            box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+            border-color: #ffffff;
+            box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        &.responsive {
+            @media (max-width: 540px) {
+                margin-top: 1.5rem;
+            }
         }
 
         a {

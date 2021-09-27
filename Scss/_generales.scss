@@ -176,6 +176,14 @@ header {
 
         &--mail {
             grid-area: esmail;
+            &:hover {
+
+                a,
+                .fa-envelope {
+                    background-image: linear-gradient(to left, #3b5998, #3b5998);
+                    border-radius: 1rem;
+                }
+            }
         }
 
         &--insta {
@@ -256,6 +264,11 @@ header {
         .fa-instagram {
 
             font-size: 2.8rem;
+        }
+
+        .fa-envelope {
+
+            font-size: 2rem;
         }
     }
 }
