@@ -354,13 +354,14 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
 @media (max-width: 500px) {
   .piedepagina__flex {
     padding: 10px 5px 10px 5px;
+    text-align: center;
   }
 }
 
 @media (max-width: 600px) {
   .piedepagina__flex p,
   .piedepagina__flex a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
