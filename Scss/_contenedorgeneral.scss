@@ -15,7 +15,7 @@
     }
     .formatoParrafos {
         p {
-            color:white;
+            /*color:white;*/
             font-size: 1.8rem;
         }
         .parrafoGrande {
@@ -45,7 +45,7 @@
     z-index: -2;
     &::before {
         content: "";
-        background-color: rgba(22, 24, 24, 0.8); 
+        background-color: rgba(235, 241, 241, 0.8); 
         position: absolute; 
         top:0;
         right: 0;
@@ -53,13 +53,13 @@
         bottom: 0;
         z-index: -1;
     }
-    h1 {
+    /*h1 {
         color: $colortitulofondo;
-    }
+    }*/
     .fondo {
-        color:$colorSubtitulofondo !important;
+       /* color:$colorSubtitulofondo !important;*/
         .fondoOscuro {
-            color:rgb(35, 204, 255);
+           color:$azul-medio;
         }
     }
 }

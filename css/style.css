@@ -642,7 +642,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
 }
 
 .contenedorGeneral .formatoParrafos p {
-  color: white;
+  /*color:white;*/
   font-size: 1.8rem;
 }
 
@@ -674,11 +674,14 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   position: relative;
   min-height: 90vh;
   z-index: -2;
+  /*h1 {
+        color: $colortitulofondo;
+    }*/
 }
 
 .imagenBase::before {
   content: "";
-  background-color: rgba(22, 24, 24, 0.8);
+  background-color: rgba(235, 241, 241, 0.8);
   position: absolute;
   top: 0;
   right: 0;
@@ -687,16 +690,12 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   z-index: -1;
 }
 
-.imagenBase h1 {
-  color: #fafafa;
-}
-
 .imagenBase .fondo {
-  color: #b7d0f8 !important;
+  /* color:$colorSubtitulofondo !important;*/
 }
 
 .imagenBase .fondo .fondoOscuro {
-  color: #23ccff;
+  color: #266fe6;
 }
 
 .formatoParrafos {
