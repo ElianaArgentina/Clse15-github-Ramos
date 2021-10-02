@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @ElianaArgentina
+- 👀 I’m interested in design ux/ui
+- 🌱 I’m currently learning web development
+- 💞️ I’m looking to collaborate on web / app design projects
+- 📫 How to reach me in elianaramos_83@hotmail.com
