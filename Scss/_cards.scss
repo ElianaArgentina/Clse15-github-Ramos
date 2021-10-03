@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 3rem;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
 
     @media (max-width: 810px) {
         .marginTop-quince {
@@ -61,6 +61,7 @@
             &:hover {
                 img {
                     transform: scale(1.2);
+                    background-color: $colorbase-iconosHover;
                 }
             }
 
@@ -146,5 +147,3 @@
         transform: scale(1);
     }
 }
-
-/*box-shadow: inset -4px -4px 12px #c7bcbc;*/ /*Sombra para botones, relieve*/

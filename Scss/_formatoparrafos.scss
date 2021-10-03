@@ -1,23 +1,40 @@
 .formatoParrafos {
-    margin: 0% 10%; 
-    margin-bottom: 7rem; 
-    margin-top: 4rem;           
-    @media (max-width: 600px) {
-        margin: 2rem;
+    margin: 0% 10%;
+
+    p {
+        font-size: 1.8rem;
+        margin: 4rem 10rem 4rem 10rem;
+        a {
+            font-size: 1.8rem;
+        }
+
     }
+
+    @media (max-width: 600px) {
+        margin: 1.5rem;
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
     .productoPrecio {
         text-align: center;
-        font-size: 2rem;
-        color: black;
+        font-size: 3.5rem;
+        color: $azul-claro;
         margin-bottom: 3rem;
+        margin-top: 3rem;
+
         @media (max-width: 1024px) {
-            font-size: 1.7rem;
+            font-size: 2rem;
         }
-        @media (max-width: 600px) {
-            font-size: 1.4rem;
-            p {
-                font-size: 1.3rem;
-            }
-        }
-    }    
+    }
+
+    .linea {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        border-top: 3px solid #7f909b;
+        width: 5%;
+        margin-bottom: 5rem;
+    }
 }
