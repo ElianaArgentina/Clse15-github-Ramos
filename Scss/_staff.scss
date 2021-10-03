@@ -1,5 +1,5 @@
 .staff {
-    display: flex;
+    @include flexbox;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;

@@ -1,5 +1,5 @@
 .cards {
-    display: flex;
+    @include flexbox;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -19,7 +19,7 @@
     }
 
     article {
-        display: flex;
+        @include flexbox;
         flex-direction: column;
         justify-content: flex-start;
         max-width: 270px;
@@ -113,7 +113,7 @@
             }
 
             .botonesFlex {
-                display: flex;
+                @include flexbox;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
 
