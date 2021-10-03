@@ -194,6 +194,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   transition: width 2s, height 2s, -webkit-transform 2s;
   transition: width 2s, height 2s, transform 2s;
   transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+  z-index: 10000;
 }
 
 .botonWhatsApp img:hover {
@@ -646,9 +647,23 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   margin: 4rem 10rem 4rem 10rem;
 }
 
+@media (max-width: 500px) {
+  .contenedorGeneral .formatoParrafos p {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+
 .contenedorGeneral .formatoParrafos .parrafoGrande {
   font-size: 3rem;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .contenedorGeneral .formatoParrafos .parrafoGrande {
+    font-size: 2.3rem;
+  }
 }
 
 .contenedorGeneral .empresaPresentacion {
@@ -710,6 +725,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   }
   .formatoParrafos p {
     font-size: 1.4rem;
+    margin: 0;
   }
 }
 
@@ -757,8 +773,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
     padding: 1rem;
   }
   .staff p {
-    padding-right: 3.5rem;
-    text-align: center;
+    padding-right: 2rem;
   }
 }
 
