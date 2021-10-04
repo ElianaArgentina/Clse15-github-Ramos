@@ -50,6 +50,10 @@ header {
             .barraBajaUl {
                 height: 100%;
 
+                @media (max-width:1200px) {
+                    margin-left: -2rem;
+                }
+
                 @media (max-width:1024px) {
                     margin-left: -2rem;
                 }
@@ -111,7 +115,7 @@ header {
         right: 20px;
         filter: drop-shadow(2px 2px 3px rgb(116, 115, 115));
         transition: width 2s, height 2s, transform 2s;
-        z-index:10000;
+        z-index: 10000;
 
         &:hover {
             transform: scale(1.1);

@@ -127,6 +127,12 @@ header .navbar .navbar-collapse .barraBajaUl {
   height: 100%;
 }
 
+@media (max-width: 1200px) {
+  header .navbar .navbar-collapse .barraBajaUl {
+    margin-left: -2rem;
+  }
+}
+
 @media (max-width: 1024px) {
   header .navbar .navbar-collapse .barraBajaUl {
     margin-left: -2rem;
@@ -443,7 +449,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 @media (max-width: 810px) {
@@ -473,7 +479,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   min-width: 120px;
   min-height: 270px;
   border-radius: 25px;
-  background-color: transparent;
+  background-color: whitesmoke;
   padding: 1rem;
   -webkit-box-shadow: 2px 2px 15px #dde0e2;
           box-shadow: 2px 2px 15px #dde0e2;
@@ -593,13 +599,19 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
 }
 
 .cards.cardsPlanes article {
-  -webkit-box-shadow: 0px 0px 0px;
-          box-shadow: 0px 0px 0px;
+  -webkit-box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.5);
 }
 
 .cards.cardsPlanes article a:hover img {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .cards.cardsPlanes article .marginTop-quince {
+    margin-top: 1.5rem;
+  }
 }
 
 .cards.cardsNosotros {
@@ -621,7 +633,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5rem 3rem 12rem 3rem;
+  margin: 5rem 3rem 11rem 3rem;
   z-index: 1 !important;
 }
 
@@ -686,9 +698,10 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   min-height: 90vh;
-  z-index: -2;
+  z-index: 50;
 }
 
 .imagenBase::before {
@@ -706,33 +719,61 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   color: #266fe6;
 }
 
+.baseTemporada {
+  background-image: url("../multimedia/imagenes/mar6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 90vh;
+  z-index: 50;
+}
+
+.baseTemporada::before {
+  content: "";
+  background-color: rgba(235, 241, 241, 0.65);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.baseTemporada .fondoClaro {
+  color: #266fe6;
+}
+
 .formatoParrafos {
   margin: 0% 10%;
 }
 
 .formatoParrafos p {
   font-size: 1.8rem;
-  margin: 4rem 10rem 4rem 10rem;
+  margin: 3rem 10rem 3rem 10rem;
 }
 
 .formatoParrafos p a {
   font-size: 1.8rem;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
   .formatoParrafos {
-    margin: 1.5rem;
+    margin: 3rem;
   }
   .formatoParrafos p {
     font-size: 1.4rem;
     margin: 0;
+    margin-bottom: 2rem;
   }
 }
 
 .formatoParrafos .productoPrecio {
   text-align: center;
   font-size: 3.5rem;
-  color: #78a0df;
+  color: #266fe6;
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
@@ -782,6 +823,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   min-height: 90vh;
 }
@@ -943,6 +985,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   min-height: 90vh;
   padding-top: 3rem;
