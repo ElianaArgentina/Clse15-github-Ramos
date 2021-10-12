@@ -3,7 +3,10 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-    font-size: 1.7rem;
+
+    p {
+        color: rgb(218, 208, 208);
+    }
 
     @media (max-width: 500px) {
         padding: 1rem;
@@ -12,4 +15,18 @@
             padding-right: 2rem;
         }
     }
+}
+
+.staffTodo {
+    padding: 5rem 10rem 5rem 10rem;
+    background-color: rgba(204, 218, 241, 0.3);
+    border-radius: 1rem !important;
+
+    @media (max-width: 601px) {
+        padding: 5rem 0.5rem 5rem 0.5rem;
+    }
+}
+
+.finalContainer {
+    padding-bottom: 5rem;
 }

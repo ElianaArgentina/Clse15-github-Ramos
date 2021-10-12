@@ -1,9 +1,30 @@
 .formatoParrafos {
     margin: 0% 10%;
 
+    .parrafo {
+        padding: 2rem 10rem 2rem 10rem;
+        color: white;
+        background-color: rgba(204, 218, 241, 0.2);
+        border-radius: 1rem !important;
+        margin: 5rem;
+
+        @media (max-width: 720px) {
+            padding: 2rem 2rem 2rem 2rem;
+            margin: 0;
+        }
+    }
+
     p {
         font-size: 1.8rem;
         margin: 3rem 10rem 3rem 10rem;
+
+        @media (min-width: 601px) {
+            margin: 3rem 8rem 3rem 8rem;
+
+            span {
+                font-size: 1.8rem;
+            }
+        }
 
         a {
             font-size: 1.8rem;
@@ -12,8 +33,12 @@
 
     }
 
+    @media (max-width: 991px) {
+        margin: 1.5rem;
+    }
+
     @media (max-width: 600px) {
-        margin: 3rem;
+        margin: 1.5rem;
 
         p {
             font-size: 1.4rem;
@@ -25,7 +50,7 @@
     .productoPrecio {
         text-align: center;
         font-size: 3.5rem;
-        color: $azul-medio;
+        color: $colorSubtitulofondo;
         margin-bottom: 3rem;
         margin-top: 3rem;
 
@@ -34,11 +59,42 @@
         }
     }
 
+    .colorIndex {
+        color: black;
+    }
+
     .linea {
         margin-left: auto !important;
         margin-right: auto !important;
         border-top: 3px solid #7f909b;
         width: 5%;
         margin-bottom: 5rem;
+    }
+
+    .muchoTexto {
+        padding: 2rem;
+        background: linear-gradient(180deg, $colorbase-iconos, white);
+        box-shadow: 3px 3px 6px rgba(41, 41, 41, 0.3);
+        border-radius: 0.9rem;
+
+        @media (min-width: 1400px) {
+            span {
+                font-size: 1.8rem;
+            }
+        }
+
+        div {
+            text-align: center;
+            padding: 1rem;
+
+            a {
+                font-size: 2.5rem;
+                text-decoration: none;
+
+                @media (max-width: 501px) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }

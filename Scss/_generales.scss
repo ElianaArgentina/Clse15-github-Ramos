@@ -1,6 +1,11 @@
 html {
     font-size: 62.5%;
+
     /* por defecto se use 10px, usamos 1 rem = 10 px, medida relativa a la conf. del tamaño raiz*/
+    @media (min-width: 1400px) {
+        font-size: 80%;
+
+    }
 }
 
 * {
@@ -9,6 +14,11 @@ html {
     box-sizing: border-box;
     font-family: Roboto;
     font-size: 1.4rem;
+
+}
+
+body {
+    background-color: #f1f1f1;
 }
 
 header {
@@ -80,6 +90,11 @@ header {
                     border-bottom: 3px solid $azul-medio !important;
                     height: 60px;
 
+                    @media (min-width: 1400px) {
+                        height: 90px;
+
+                    }
+
                     .nav-link {
                         color: $azul-medio !important;
                     }
@@ -93,6 +108,10 @@ header {
 
                 li {
                     margin-left: 2.5rem;
+
+                    @media (min-width: 1400px) {
+                        margin-left: 1.3rem;
+                    }
 
                     &.bandera {
                         filter: drop-shadow(0.5px 0.5px 2px rgb(168, 168, 168));
@@ -111,8 +130,8 @@ header {
     img {
         width: 70px;
         position: fixed;
-        bottom: 180px;
-        right: 20px;
+        bottom: 20px;
+        right: 90px;
         filter: drop-shadow(2px 2px 3px rgb(116, 115, 115));
         transition: width 2s, height 2s, transform 2s;
         z-index: 10000;
@@ -125,8 +144,28 @@ header {
             width: 55px;
             position: fixed;
             filter: drop-shadow(3px 3px 3px rgb(116, 115, 115));
+            right: 10px;
+            bottom: 60px;
         }
     }
+}
+
+#cards {
+    padding: 8rem;
+
+    @media (max-width: 1200px) {
+        padding: 0;
+    }
+}
+
+.textoColor {
+    color: $azul-medio;
+    font-weight: 700;
+}
+
+.textoColorclaro {
+    color: $colorSubtitulofondo;
+    font-weight: 500;
 }
 
 .piedepagina {
@@ -141,10 +180,10 @@ header {
             ".           esmail       esface";
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        padding: 10px;
+        padding: 1rem;
 
         @media (max-width: 500px) {
-            padding: 5px 0 0 0;
+            /*margin: 0.5rem 0 0 0;*/
             @include flexbox;
             flex-direction: column;
 
@@ -165,6 +204,11 @@ header {
         &--arriba {
             grid-area: esarriba;
 
+            a,
+            .fa-chevron-circle-up {
+                padding: 0.5rem;
+            }
+
             &:hover {
 
                 a,
@@ -182,6 +226,12 @@ header {
         &--mail {
             grid-area: esmail;
 
+
+            a,
+            .fa-envelope {
+                padding: 0.5rem;
+            }
+
             &:hover {
 
                 a,
@@ -195,18 +245,29 @@ header {
         &--insta {
             grid-area: esinsta;
 
+            a,
+            .fa-instagram {
+                padding: 0.5rem;
+            }
+
             &:hover {
 
                 a,
                 .fa-instagram {
-                    background-image: linear-gradient(to left, #f9ed32, #ee2a7b, #002aff);
+                    background-image: linear-gradient(to left, #f9ec32c9, #ee2a7b, #002aff);
                     border-radius: 1rem;
+
                 }
             }
         }
 
         &--face {
             grid-area: esface;
+
+            a,
+            .fa-facebook-square {
+                padding: 0.5rem;
+            }
 
             &:hover {
 
