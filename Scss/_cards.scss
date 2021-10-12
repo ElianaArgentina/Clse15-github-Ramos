@@ -23,6 +23,10 @@
     }
 }
 
+.imagenCien {
+    width: 100%;
+}
+
 .cards {
     @include flexbox;
     flex-direction: row;

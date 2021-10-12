@@ -116,6 +116,11 @@ header {
                     &.bandera {
                         filter: drop-shadow(0.5px 0.5px 2px rgb(168, 168, 168));
 
+                        .medida {
+                            width: 30px;
+                            height: 30px;
+                        }
+
                         @media (max-width:768px) {
                             padding-left: 1.5rem;
                         }

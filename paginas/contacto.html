@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <link rel="icon" href="../multimedia/Recurso 7ldpi.png" type="image/png">
+    <link rel="icon" href="../multimedia/Recurso7ldpi.png" type="image/png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="../index.html">
-                            <img src="../multimedia/Recurso 8ldpi.png" alt="imagen del logo de Quemiloa">
+                            <img src="../multimedia/Recurso8ldpi.png" alt="imagen del logo de Quemiloa">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -66,8 +66,8 @@
                                 </li>
                                 <li class="bandera d-flex align-items-center">
                                     <a href="#">
-                                        <img src="../multimedia/united-states-of-america.svg"
-                                            alt="bandera de Estados Unidos, idioma inglés" width="30px" height="30px">
+                                        <img class="medida" src="../multimedia/united-states-of-america.svg"
+                                            alt="bandera de Estados Unidos, idioma inglés">
                                     </a>
                                 </li>
                             </ul>
@@ -80,12 +80,8 @@
     <!--Acá termina el menu superior derecho con el logo de la web a la izq-->
     <section id="contacto" class="contacto">
         <h1>Contacto</h1>
-        <h2>
-            Escribe una consulta y respondemos por mail
-            <div class="paddingQuince">
-                ¡También podés hablar con un vendedor haciendo click en el logo de WhatsApp!
-            </div>
-        </h2>
+        <h2>Escribe una consulta y respondemos por mail</h2>
+        <h3>¡También podés hablar con un vendedor haciendo click en el logo de WhatsApp!</h3>    
         <div class="container">
             <div class="row">
                 <form class="row g-3 needs-validation paddingQuince" novalidate>
@@ -102,8 +98,7 @@
                     <div class="col-md-4">
                         <label for="validationCustomUsername" class="form-label">Email</label>
                         <div class="input-group has-validation">
-                            <label for="exampleFormControlInput1" class="form-label"></label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                            <input type="email" class="form-control" id="validationCustomUsername"
                                 placeholder="ejemplo@mail.com" required>
                             <div class="invalid-feedback">
                                 Revisa si está bien escrito el mail, ejemplo@mail.com
@@ -125,10 +120,10 @@
                         <label for="validationCustom04" class="form-label">¡Quiero información sobre los productos de
                             temporada!</label>
                         <select class="form-select" id="validationCustom04" required>
-                            <option>No por ahora, gracias</option>
-                            <option>¡Sí! cada 4 meses</option>
-                            <option selected>¡Sí! cada 6 meses</option>
-                            <option>¡Sí! cada 12 meses</option>
+                            <option value="No por ahora, gracias">No por ahora, gracias</option>
+                            <option value="¡Sí! cada 4 meses">¡Sí! cada 4 meses</option>
+                            <option value="¡Sí! cada 6 meses" selected>¡Sí! cada 6 meses</option>
+                            <option value="¡Sí! cada 12 meses">¡Sí! cada 12 meses</option>
                         </select>
                     </div>
                     <div class="d-grid gap-2 col-2 mx-auto">
@@ -158,17 +153,19 @@
                 <p><i class="fas fa-phone-alt marginRight-quince"></i>+54 223 506-4753</p>
             </article>
             <article class="piedepagina__grilla--mail piedepagina__grilla--centrado">
-                <p><a href="mailto:quemiloasa@gmail.com?subject=Les%20hago%20una%20consulta"><i
-                            class="far fa-envelope marginRight-quince"></i>Enviar email</p></a>
+                <p><a href="mailto:quemiloasa@gmail.com?subject=Les%20hago%20una%20consulta">
+                    <i class="far fa-envelope marginRight-quince"></i>Enviar email</a>
+                </p>
             </article>
             <article class="piedepagina__grilla--insta piedepagina__grilla--centrado">
-                <p><a href="https://www.instagram.com/quemiloa_fish/" target="_blanck"><i
-                            class="fab fa-instagram marginRight-quince"></i>Instagram</a>
+                <p><a href="https://www.instagram.com/quemiloa_fish/" target="blanck">
+                    <i class="fab fa-instagram marginRight-quince"></i>Instagram</a>
                 </p>
             </article>
             <article class="piedepagina__grilla--face piedepagina__grilla--centrado">
-                <p><a href="https://www.facebook.com/ImpexsurArgentina" target="_blanck"><i
-                            class="fab fa-facebook-square marginRight-quince"></i>Facebook</a></p>
+                <p><a href="https://www.facebook.com/ImpexsurArgentina" target="blanck">
+                    <i class="fab fa-facebook-square marginRight-quince"></i>Facebook</a>
+                </p>
             </article>
         </div>
         <div class="piedepagina__flex">

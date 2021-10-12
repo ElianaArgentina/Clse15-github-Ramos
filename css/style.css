@@ -205,6 +205,11 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
           filter: drop-shadow(0.5px 0.5px 2px #a8a8a8);
 }
 
+header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
+  width: 30px;
+  height: 30px;
+}
+
 @media (max-width: 768px) {
   header .navbar .navbar-collapse .barraBajaUl li.bandera {
     padding-left: 1.5rem;
@@ -529,6 +534,10 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
 
 .modal .modal-content {
   border-radius: 2rem;
+}
+
+.imagenCien {
+  width: 100%;
 }
 
 .cards {
@@ -1052,7 +1061,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
 }
 
 .staffTodo {
-  padding: 5rem 10rem 5rem 10rem;
+  padding: 2rem 10rem 2rem 10rem;
   background-color: rgba(204, 218, 241, 0.3);
   border-radius: 1rem !important;
 }
@@ -1094,6 +1103,15 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera {
 .contacto h2 {
   margin-bottom: 0rem;
   color: #b7d0f8;
+}
+
+.contacto h3 {
+  margin-bottom: 0rem;
+  color: #b7d0f8;
+  position: relative;
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .contacto .needs-validation {
