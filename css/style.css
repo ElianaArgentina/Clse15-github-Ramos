@@ -532,6 +532,10 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
   }
 }
 
+.modal {
+  z-index: 10001;
+}
+
 .modal .modal-content {
   border-radius: 2rem;
 }
