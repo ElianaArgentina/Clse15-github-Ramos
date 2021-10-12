@@ -2,4 +2,6 @@
 - 👀 I’m interested in design ux/ui
 - 🌱 I’m currently learning web development
 - 💞️ I’m looking to collaborate on web / app design projects
-- 📫 How to reach me in elianaramos_83@hotmail.com
+- 📫 Email elianaramos_83@hotmail.com
+- linkedIn https://www.linkedin.com/in/eliana-ramos-uxdesigner/
+- Portfolio https://www.behance.net/elianaramos
