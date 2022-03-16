@@ -462,6 +462,10 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
   font-size: 2rem;
 }
 
+.disclaimer {
+  display: none;
+}
+
 .pantallaCompleta {
   max-width: 100vw !important;
 }
