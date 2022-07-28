@@ -62,7 +62,7 @@
         transition: width 20s, height 20s, transform 20s;
 
         @media (min-width: 1400px) {
-            max-width: 320px;
+            max-width: 300px;
         }
 
         &:hover {
@@ -189,5 +189,23 @@
 
     &.cardsNosotros {
         transform: scale(1);
+    }
+}
+
+.modal-footer {
+
+    border-top: 0px !important; 
+}
+
+.modal-header {
+
+    border-bottom: 0px !important; 
+}
+
+.modal-enviar {
+
+    padding: 6rem 2rem 0 1rem;
+    p, b {
+        font-size: 2rem;
     }
 }

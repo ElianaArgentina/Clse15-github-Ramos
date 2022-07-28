@@ -49,13 +49,19 @@
 
     .productoPrecio {
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 3rem;
         color: $colorSubtitulofondo;
         margin-bottom: 3rem;
         margin-top: 3rem;
+        .fontsizeParrafo {
+            font-size: 3.5rem !important;
+        }
 
         @media (max-width: 1024px) {
             font-size: 2rem;
+            .fontsizeParrafo {
+                font-size: 2rem !important;
+            }
         }
     }
 

@@ -41,9 +41,9 @@ header {
             padding-top: 0;
 
             img {
-                height: 6rem;
-                width: 17rem;
-                padding: 0.3rem;
+                height: 7rem;
+                width: -1rem;
+                padding: 0rem;
                 filter: drop-shadow(1px 1px 2px rgb(168, 168, 168));
             }
         }
@@ -78,7 +78,8 @@ header {
                     border-bottom: 3px solid transparent;
 
                     .nav-link {
-                        margin-left: 1.5rem;
+                        margin-left: 0.75rem;
+                        margin-right: 0.75rem
                     }
 
                     .nav-link:hover {
@@ -214,15 +215,15 @@ header {
                 padding: 0.5rem;
             }
 
-            &:hover {
+          /*  &:hover {
 
                 a,
                 .fa-chevron-circle-up {
-                    background-image: linear-gradient(to left, #42a508, #03520a);
+                    background-image: linear-gradient(to left, #3b5998, #3b5998);
                     border-radius: 1rem;
                 }
-            }
-        }
+            } */
+        } 
 
         &--telefono {
             grid-area: estelefono;
@@ -303,7 +304,7 @@ header {
         filter: saturate(40%);
 
         a {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         @media (max-width: 500px) {

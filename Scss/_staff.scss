@@ -5,7 +5,7 @@
     align-items: flex-start;
 
     p {
-        color: rgb(218, 208, 208);
+        color: rgb(0, 0, 0);
     }
 
     @media (max-width: 500px) {
@@ -19,7 +19,7 @@
 
 .staffTodo {
     padding: 2rem 10rem 2rem 10rem;
-    background-color: rgba(204, 218, 241, 0.3);
+    background-color: rgba(204, 218, 241, 0.568);
     border-radius: 1rem !important;
 
     @media (max-width: 601px) {

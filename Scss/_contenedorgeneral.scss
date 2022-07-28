@@ -125,6 +125,7 @@
     position: relative;
     min-height: 90vh;
     z-index: 50;
+    padding-bottom: 1rem !important;
 
     &::before {
         content: "";

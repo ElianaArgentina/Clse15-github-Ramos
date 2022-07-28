@@ -114,9 +114,9 @@ header .navbar .navbar-brand {
 }
 
 header .navbar .navbar-brand img {
-  height: 6rem;
-  width: 17rem;
-  padding: 0.3rem;
+  height: 7rem;
+  width: -1rem;
+  padding: 0rem;
   -webkit-filter: drop-shadow(1px 1px 2px #a8a8a8);
           filter: drop-shadow(1px 1px 2px #a8a8a8);
 }
@@ -160,7 +160,8 @@ header .navbar .navbar-collapse .barraBajaUl .nav-item {
 }
 
 header .navbar .navbar-collapse .barraBajaUl .nav-item .nav-link {
-  margin-left: 1.5rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 header .navbar .navbar-collapse .barraBajaUl .nav-item .nav-link:hover {
@@ -321,18 +322,19 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: esarriba;
+  /*  &:hover {
+
+                a,
+                .fa-chevron-circle-up {
+                    background-image: linear-gradient(to left, #3b5998, #3b5998);
+                    border-radius: 1rem;
+                }
+            } */
 }
 
 .piedepagina__grilla--arriba a,
 .piedepagina__grilla--arriba .fa-chevron-circle-up {
   padding: 0.5rem;
-}
-
-.piedepagina__grilla--arriba:hover a,
-.piedepagina__grilla--arriba:hover .fa-chevron-circle-up {
-  background-image: -webkit-gradient(linear, right top, left top, from(#42a508), to(#03520a));
-  background-image: linear-gradient(to left, #42a508, #03520a);
-  border-radius: 1rem;
 }
 
 .piedepagina__grilla--telefono {
@@ -424,7 +426,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
 }
 
 .piedepagina__flex a {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 500px) {
@@ -604,7 +606,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
 
 @media (min-width: 1400px) {
   .cards article {
-    max-width: 320px;
+    max-width: 300px;
   }
 }
 
@@ -741,6 +743,22 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
 .cards.cardsNosotros {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.modal-footer {
+  border-top: 0px !important;
+}
+
+.modal-header {
+  border-bottom: 0px !important;
+}
+
+.modal-enviar {
+  padding: 6rem 2rem 0 1rem;
+}
+
+.modal-enviar p, .modal-enviar b {
+  font-size: 2rem;
 }
 
 .contenedorGeneral {
@@ -888,6 +906,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
   position: relative;
   min-height: 90vh;
   z-index: 50;
+  padding-bottom: 1rem !important;
 }
 
 .baseTemporada::before {
@@ -984,15 +1003,22 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
 
 .formatoParrafos .productoPrecio {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #b7d0f8;
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
 
+.formatoParrafos .productoPrecio .fontsizeParrafo {
+  font-size: 3.5rem !important;
+}
+
 @media (max-width: 1024px) {
   .formatoParrafos .productoPrecio {
     font-size: 2rem;
+  }
+  .formatoParrafos .productoPrecio .fontsizeParrafo {
+    font-size: 2rem !important;
   }
 }
 
@@ -1056,7 +1082,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
 }
 
 .staff p {
-  color: #dad0d0;
+  color: black;
 }
 
 @media (max-width: 500px) {
@@ -1070,7 +1096,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
 
 .staffTodo {
   padding: 2rem 10rem 2rem 10rem;
-  background-color: rgba(204, 218, 241, 0.3);
+  background-color: rgba(204, 218, 241, 0.568);
   border-radius: 1rem !important;
 }
 
@@ -1257,6 +1283,10 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
 
 .marginRight-quince {
   margin-right: 1.5rem;
+}
+
+.marginTop-diez {
+  margin-top: 1rem;
 }
 
 .error404 {
