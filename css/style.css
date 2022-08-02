@@ -754,10 +754,10 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
 }
 
 .modal-enviar {
-  padding: 6rem 2rem 0 1rem;
+  padding: 4rem 2rem 0 2rem;
 }
 
-.modal-enviar p, .modal-enviar b {
+.modal-enviar p, .modal-enviar b, .modal-enviar spam {
   font-size: 2rem;
 }
 
@@ -911,7 +911,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
 
 .baseTemporada::before {
   content: "";
-  background-color: rgba(235, 241, 241, 0.65);
+  background-color: rgba(235, 241, 241, 0.8);
   position: absolute;
   top: 0;
   right: 0;
@@ -1035,6 +1035,7 @@ header .navbar .navbar-collapse .barraBajaUl li.bandera .medida {
 }
 
 .formatoParrafos .muchoTexto {
+  margin-bottom: 3rem;
   padding: 2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(202, 216, 243, 0.87)), to(white));
   background: linear-gradient(180deg, rgba(202, 216, 243, 0.87), white);
