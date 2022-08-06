@@ -64,7 +64,7 @@
                                     <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
                                 </li>
                                 <li class="bandera d-flex align-items-center">
-                                    <a href="/EN/paginas EN/contacto EN.html">
+                                    <a href="/EN/paginas/contacto.html">
                                         <img class="medida" src="../multimedia/united-states-of-america.svg"
                                             alt="bandera de Estados Unidos, idioma inglés">
                                     </a>
@@ -83,11 +83,12 @@
         <h3>¡También podés hablar con un vendedor haciendo click en el logo de WhatsApp!</h3>    
         <div class="container">
             <div class="row">
-                <form class="row g-3 needs-validation paddingQuince" novalidate>
+                <form class="row g-3 needs-validation paddingQuince" id="formContact" novalidate action="https://formspree.io/f/mqkjzodj"
+                method="POST">
                     <div class="col-md-4">
                         <label for="validationCustom01" class="form-label">Nombre</label>
                         <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationCustom01"
+                            <input type="text" class="form-control" id="validationCustom01" name="name"
                                 placeholder="Escribe un nombre" required>
                             <div class="invalid-feedback">
                                 Escribe un nombre
@@ -97,7 +98,7 @@
                     <div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Empresa</label>
                         <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationCustom02"
+                            <input type="text" class="form-control" id="validationCustom02" name="company"
                                 placeholder="Escribe el nombre de tu Empresa">
                             <div class="invalid-feedback">
                                 ¿De parte de que Empresa estás consultando?
@@ -107,7 +108,7 @@
                     <div class="col-md-4">
                         <label for="validationCustomUsername" class="form-label">Email</label>
                         <div class="input-group has-validation">
-                            <input type="email" class="form-control" id="validationCustomUsername"
+                            <input type="email" class="form-control" id="validationCustomUsername" name="email"
                                 placeholder="ejemplo@mail.com" required>
                             <div class="invalid-feedback">
                                 Revisa si está bien escrito el mail, ejemplo@mail.com
@@ -118,7 +119,7 @@
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Consulta lo que
                                 necesitas saber</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name="message"
                                 placeholder="Quiero saber los precios de... " required></textarea>
                             <div class="invalid-feedback">
                                 Escribe una consulta y respondemos al mail de arriba
@@ -128,7 +129,7 @@
                     <div class="col-md-3">
                         <label for="validationCustom04" class="form-label">¡Quiero información sobre los productos de
                             temporada!</label>
-                        <select class="form-select" id="validationCustom04" required>
+                        <select class="form-select" id="validationCustom04" required name="info">
                             <option value="No por ahora, gracias">No por ahora, gracias</option>
                             <option value="¡Sí! cada 4 meses">¡Sí! cada 4 meses</option>
                             <option value="¡Sí! cada 6 meses" selected>¡Sí! cada 6 meses</option>
@@ -136,8 +137,7 @@
                         </select>
                     </div>
                     <div class="d-grid gap-2 col-2 mx-auto">
-                        <button class="btn btn-primary marginBottom-cincuenta" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal" type="submit">Enviar</button>
+                        <button class="btn btn-primary marginBottom-cincuenta" type="submit">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -149,10 +149,9 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-enviar">
                 <div class="modal-body">
-                    <p><b>¡Listo!</b> Envíamos su consulta por mail</p>
+                    <p>Enviando</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-link btn-lg" data-bs-dismiss="modal"> Cerrar</button>
                 </div>
             </div>
         </div>
@@ -199,7 +198,8 @@
             <p><a href="https://www.linkedin.com/in/eliana-ramos-uxdesigner/" target="blanck">Desarrollado por Eli-mdq</a></p>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js" integrity="sha256-0H3Nuz3aug3afVbUlsu12Puxva3CP4EhJtPExqs54Vg=" crossorigin="anonymous"></script>
+    <script src="../js/form.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

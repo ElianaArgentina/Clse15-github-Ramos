@@ -38,7 +38,7 @@
             <div class="row">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="../index EN.html">
+                        <a class="navbar-brand" href="../index.html">
                             <img src="/multimedia/LOGOfondoTransp.png" alt="imagen del logo de Quemiloa">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -49,16 +49,16 @@
                         <div class="barraBaja collapse navbar-collapse" id="navbarNav">
                             <ul class="barraBajaUl navbar-nav menuDerecha">
                                 <li class="nav-item d-flex align-items-center">
-                                    <a class="nav-link" aria-current="page" href="../index EN.html">Home</a>
+                                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                                 </li>
                                 <li class="nav-item d-flex align-items-center">
-                                    <a class="nav-link" href="/EN/paginas EN/sobrenosotros EN.html">About us</a>
+                                    <a class="nav-link" href="/EN/paginas/sobrenosotros.html">About us</a>
                                 </li>
                                 <li class="nav-item d-flex align-items-center">
-                                    <a class="nav-link" href="/EN/paginas EN/productostemporada EN.html">Our products</a>
+                                    <a class="nav-link" href="/EN/paginas/productostemporada.html">Our products</a>
                                 </li>
                                 <li class="nav-item active d-flex align-items-center">
-                                    <a class="nav-link" href="/EN/paginas EN/contacto EN.html">Contact</a>
+                                    <a class="nav-link" href="/EN/paginas/contacto.html">Contact</a>
                                 </li>
                                 <li class="bandera d-flex align-items-center">
                                     <a href="/paginas/contacto.html">
@@ -80,11 +80,12 @@
         <h3>You can also talk to a seller by clicking on the WhatsApp logo!</h3>    
         <div class="container">
             <div class="row">
-                <form class="row g-3 needs-validation paddingQuince" novalidate>
+                <form class="row g-3 needs-validation paddingQuince" id="formContact" novalidate action="https://formspree.io/f/mqkjzodj"
+                method="POST">
                     <div class="col-md-4">
                         <label for="validationCustom01" class="form-label">Name</label>
                         <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationCustom01"
+                            <input type="text" class="form-control" id="validationCustom01" name="name"
                                 placeholder="Write a name" required>
                             <div class="invalid-feedback">
                                 Write a name
@@ -94,7 +95,7 @@
                     <div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Company</label>
                         <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationCustom02"
+                            <input type="text" class="form-control" id="validationCustom02" name="company"
                                 placeholder="Write the name of your company">
                             <div class="invalid-feedback">
                                 From which company are you consulting?
@@ -104,7 +105,7 @@
                     <div class="col-md-4">
                         <label for="validationCustomUsername" class="form-label">Email</label>
                         <div class="input-group has-validation">
-                            <input type="email" class="form-control" id="validationCustomUsername"
+                            <input type="email" class="form-control" id="validationCustomUsername" name="email"
                                 placeholder="example@email.com" required>
                             <div class="invalid-feedback">
                                 Check if the email is well written, example@email.com
@@ -114,7 +115,7 @@
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">See what you need to know</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name="message"
                                 placeholder="I want to know the prices of... " required></textarea>
                             <div class="invalid-feedback">
                                 Write a query and we will respond to the email above
@@ -123,7 +124,7 @@
                     </div>
                     <div class="col-md-3">
                         <label for="validationCustom04" class="form-label">I want information about seasonal products!</label>
-                        <select class="form-select" id="validationCustom04" required>
+                        <select class="form-select" id="validationCustom04" required name="info">
                             <option value="Not for now, thanks">Not for now, thanks</option>
                             <option value="Yes! every 4 months">Yes! every 4 months</option>
                             <option value="Yes! every 6 months" selected>Yes! every 6 months</option>
@@ -131,24 +132,22 @@
                         </select>
                     </div>
                     <div class="d-grid gap-2 col-2 mx-auto">
-                        <button class="btn btn-primary marginBottom-cincuenta" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal" type="submit">Send</button>
+                        <button class="btn btn-primary marginBottom-cincuenta" type="submit">Send</button>
                     </div>
                 </form>
             </div>
         </div>
 
     </section>
-    <!-- Modal enviar -->
+    <!-- Modalviar -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-enviar">
                 <div class="modal-body">
-                    <p><b>¡Ready!</b> We send your inquiry by email</p>
+                    <p>Sending</p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-link btn-lg" data-bs-dismiss="modal"> Close</button>
-                </div>
+            </div>
+            <div class="modal-footer">
             </div>
         </div>
     </div>
@@ -194,7 +193,8 @@
             <p><a href="https://www.linkedin.com/in/eliana-ramos-uxdesigner/" target="blanck">by Eli-mdq</a></p>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js" integrity="sha256-0H3Nuz3aug3afVbUlsu12Puxva3CP4EhJtPExqs54Vg=" crossorigin="anonymous"></script>
+    <script src="../../js/form.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
