@@ -3,6 +3,9 @@ try {
     var change = false;
     var lastComment = "";
     var onEnglish = window.location.pathname.toLowerCase().includes("/en/");
+    var year = document.querySelectorAll(".year");
+    var dt = new Date(); 
+    year[0].textContent = dt.getFullYear();
     var buttons = document.querySelectorAll(".handleForm");
     buttons.forEach(element => {
         element.addEventListener("click",function(e){
