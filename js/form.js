@@ -2,7 +2,7 @@ try {
     var productsOnFrom = new Array();
     var change = false;
     var lastComment = "";
-    var onEnglish = window.location.pathname.toLowerCase().includes("/en/");
+    var onSpanish = window.location.pathname.toLowerCase().includes("/es/");
     var year = document.querySelectorAll(".year");
     var dt = new Date(); 
     year[0].textContent = dt.getFullYear();
@@ -72,19 +72,19 @@ function resolveProductsOnFrom()
         if (added) {
             element.classList.add("bg-danger");
             element.classList.add("text-white");
-            element.innerText = onEnglish ? "Added" : "Agregado";
+            element.innerText = onSpanish ? "Agregado" :  "Added" ;
         } else {
             element.classList.remove("bg-danger");
             element.classList.remove("text-white");
-            element.innerText = onEnglish ? "Consult" : "Consultar";
+            element.innerText = onSpanish ? "Consultar" : "Consult";
         }
     });
 
     try
     {
         var consult = document.getElementById('exampleFormControlTextarea1');
-        var names = productsOnFrom.map(current => onEnglish ? current.nameEn : current.nameEs);
-        var title = onEnglish ? "I want to know the prices of:" : "Quiero saber los precios de:"
+        var names = productsOnFrom.map(current => onSpanish ? current.nameEs : current.nameEn);
+        var title = onSpanish ? "Quiero saber los precios de:" : "I want to know the prices of:"
         consult.value = title;
         consult.value += "\n";
         consult.value += "\n";
