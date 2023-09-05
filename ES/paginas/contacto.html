@@ -95,14 +95,14 @@
         <h3>¡También podés hablar con un vendedor haciendo click en el logo de WhatsApp!</h3>    
         <div class="container">
             <div class="row">
-                <form class="row g-3 needs-validation paddingQuince" id="formContact" novalidate action="https://formspree.io/f/mqkjzodj"
+                <form class="row g-3 needs-validation paddingQuince" id="formContact" action="https://formspree.io/f/mqkjzodj"
                 method="POST">
                     <div class="col-md-4">
                         <label for="validationCustom01" class="form-label">Nombre</label>
                         <div class="input-group has-validation">
                             <input type="text" class="form-control" id="validationCustom01" name="name"
                                 placeholder="Escribe un nombre" required>
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback nameerror">
                                 Escribe un nombre
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                         <div class="input-group has-validation">
                             <input type="text" class="form-control" id="validationCustom02" name="company"
                                 placeholder="Escribe el nombre de tu Empresa">
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback companyerror">
                                 ¿De parte de que Empresa estás consultando?
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                         <div class="input-group has-validation">
                             <input type="email" class="form-control" id="validationCustomUsername" name="email"
                                 placeholder="ejemplo@mail.com" required>
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback emailerror">
                                 Revisa si está bien escrito el mail, ejemplo@mail.com
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                                 necesitas saber</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name="message"
                                 placeholder="Quiero saber los precios de... " required></textarea>
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback commenterror">
                                 Escribe una consulta y respondemos al mail de arriba
                             </div>
                         </div>
@@ -220,17 +220,48 @@
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
+         (function () {
             'use strict'
 
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.querySelectorAll('.needs-validation')
+            var forms = document.querySelectorAll('.needs-validation');
+            var nameError = document.querySelectorAll(".nameerror")[0];
+            var nameInpunt = document.getElementById("validationCustom01");
+            var companyError = document.querySelectorAll(".companyerror")[0];
+            var comapnyInpunt = document.getElementById("validationCustom02");
+            var emailError = document.querySelectorAll(".emailerror")[0];
+            var emailInpunt = document.getElementById("validationCustomUsername");
+            var commentError = document.querySelectorAll(".commenterror")[0];
+            var commentInpunt = document.getElementById("exampleFormControlTextarea1");
 
+            nameError.style.display = "none";
+            nameError.style.zIndex = "-1";
+            companyError.style.display = "none";
+            companyError.style.zIndex = "-1";
+            emailError.style.display = "none";
+            emailError.style.zIndex = "-1";
+            commentError.style.display = "none";
+            commentError.style.zIndex = "-1";
+            nameInpunt.oninvalid = () => {
+                nameError.style.display = "block";
+            }
+            comapnyInpunt.oninvalid = () => {
+                companyError.style.display = "block";
+            }
+            emailInpunt.oninvalid = () => {
+                emailError.style.display = "block";
+            }
+            commentInpunt.oninvalid = () => {
+                commentError.style.display = "block";
+            }
             // Loop over them and prevent submission
             Array.prototype.slice.call(forms)
                 .forEach(function (form) {
                     form.addEventListener('submit', function (event) {
+                        nameError.style.display = "none";
+                        companyError.style.display = "none";
+                        emailError.style.display = "none";
+                        commentError.style.display = "none";
                         if (!form.checkValidity()) {
                             event.preventDefault()
                             event.stopPropagation()
